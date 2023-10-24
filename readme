@@ -2,7 +2,7 @@ Assignment 1 readme File
 
 ------------------------------------------------------------------------
 What is your name?
-
+Kok Wei Pua
 
 
 ------------------------------------------------------------------------
@@ -11,7 +11,25 @@ assignment? COPY THE LIST of authorized sources of information given
 in the "Policies" web page (also available on armlab in the file
 ~cos217/AuthorizedSourcesList ) to this section of the readme file,
 and edit it as appropriate.
+The course's lectures. 
+- Building C Programs & Implementing DFAs
+- Program Design Decision & C Language Design (Logical Data)
 
+The course's precepts.
+- COS 217: Introduction to Programming Systems C Primitive Data Types (Precept 4)
+- COS 217: Introduction to Programming Systems C Symbolic Constants (Precept 3)
+- COS 217: Introduction to Programming Systems Git and GitHub Primer (Precept 1)
+
+The course's website.
+- Assignment 1: A "De-comment" Program Specification Pages
+    https://www.cs.princeton.edu/courses/archive/spr23/cos217/asgts/01decomment/index.html
+    
+Documents that are referenced directly by the course's website. Such documents include the course's lecture slides and precept handouts.
+- Textual DFAs:
+    https://www.cs.princeton.edu/courses/archive/spr23/cos217/asgts/01decomment/TextualDFAs
+
+Current Intro Lab TAs through visits to the Intro COS Lab.
+- Lance, Emilio, Alyssa Traylor
 
 
 ------------------------------------------------------------------------
@@ -26,11 +44,14 @@ interaction, may additionally require the interaction being reported
 to the Committee on Discipline. Write "None" if you used no
 unauthorized sources of information.
 
+None.
 
 
 ------------------------------------------------------------------------
 What is your assessment of the assignment? Was it helpful? Was it fun?
-
+I like this assignment! It is a good introduction to C-programming and DFAs. 
+I find the programming logic/data structures learned from COS 226 very 
+applicable in this assignment. 
 
 
 ------------------------------------------------------------------------
@@ -38,6 +59,6 @@ What is your assessment of the assignment? Was it helpful? Was it fun?
 will help your grader to grade it in the most favorable light? In
 particular, what bugs are in your submission?
 
-
+None.
 
 ------------------------------------------------------------------------

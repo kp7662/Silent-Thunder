@@ -1,0 +1,58 @@
+Textual DFA
+Author: Kok Wei Pua
+
+Note that:
+- A DFA consists of states and transitions.
+- Each transition is labeled with exactly one character or character set.
+- In a DFA the next state is a function of the current state and the current character. 
+    The next state is a function of *only* the current state and the current character.
+- A DFA indicates which state is the START state.
+- A DFA indicates whether each state is an accepting state or a rejecting state.
+
+***************************************************************************************
+
+START (accept) ← the start state
+        /   : MAYBE_COMMENT
+        \"  : STRING_LITERAL
+        \'  : CHAR_LITERAL
+        \n  : START
+	others  : START
+
+MAYBE_COMMENT (accept)
+	*  : IN_COMMENT
+	/  : MAYBE_COMMENT
+	\" : STRING_LITERAL
+        \' : CHAR_LITERAL
+        \n : START
+	others : START
+
+IN_COMMENT (reject)
+        *  : END_COMMENT
+        \n : IN_COMMENT
+	others : IN_COMMENT
+
+END_COMMENT (reject)
+        /  : START
+        *  : END_COMMENT
+        \n : IN_COMMENT
+    others : IN_COMMENT
+
+STRING_LITERAL (accept)
+        \" : START
+        \\ : STRING_ESCAPE
+        \n : STRING_LITERAL
+	others : STRING_LITERAL
+
+STRING_ESCAPE (accept)
+	    \n : STRING_ESCAPE
+	others : STRING_LITERAL
+
+CHAR_LITERAL (accept)
+        \' : START
+        \\ : CHAR_ESCAPE
+        \n : CHAR_LITERAL
+	others : CHAR_LITERAL
+
+CHAR_ESCAPE (accept)
+	    \n : CHAR_ESCAPE
+	others : CHAR_LITERAL
